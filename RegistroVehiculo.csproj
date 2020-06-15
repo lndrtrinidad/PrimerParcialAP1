@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
+    
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
@@ -15,11 +18,9 @@
 
   <ItemGroup>
     <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
     <Folder Include="DATA\" />
     <Folder Include="Entidades\" />
     <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registro\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,10 +32,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\descarga %281%29.png" />
-    <Resource Include="Resources\eliminar.png" />
-    <Resource Include="Resources\images.png" />
-    <Resource Include="Resources\nuevo.png" />
+    <SplashScreen Include="Resources\descarga %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </SplashScreen>
+    <Content Include="Resources\eliminar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\images.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\nuevo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
