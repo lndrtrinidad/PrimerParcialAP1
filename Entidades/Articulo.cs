@@ -5,10 +5,10 @@ using System.Text;
 
 namespace RegistroArticulo.Entidades
 {
-    class Articulo
+    public class Articulos
     {
         [Key]
-        public int ProductoId { get; set; }
+        public int ArticuloId { get; set; }
         public int Descripcion { get; set; }
         public float Costo { get; set; }
         public float ValorInv { get; set; }
