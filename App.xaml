@@ -1,7 +1,7 @@
-﻿<Application x:Class="RegistroVehiculo.App"
+﻿<Application x:Class="RegistroArticulo.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:RegistroVehiculo"
+             xmlns:local="clr-namespace:RegistroArticulo"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

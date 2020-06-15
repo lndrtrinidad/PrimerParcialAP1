@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace RegistroVehiculo.UI.Registro
+namespace RegistroArticulo.UI.Registro
 {
     /// <summary>
     /// Interaction logic for RegistroV.xaml
