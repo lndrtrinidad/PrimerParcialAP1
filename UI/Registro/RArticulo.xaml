@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="RArticulos" Height="300" Width="350">
     <Grid>
+        <Label Content="Articuli Id:" Margin="10,35,260,223"/>
+        <TextBox x:Name="ArticuloIdTexBox" Text="0" TextWrapping="Wrap" Width="120" Margin="106,35,124,223"/>
+        <Button Content="Buscar" Margin="238,35,10,223" Click="BuscarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/images.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+
+        <Label Content="Descripcion:" Margin="10,66,260,193"/>
+        <TextBox x:Name="DescripcionTextBox" TextWrapping="Wrap" Margin="106,66,10,193"/>
         
+        <Label Content="Existencia:" Margin="10,96,260,158"/>
+        <TextBox x:Name="ExistenciaTextBox" TextWrapping="Wrap" Width="120" Margin="106,96,124,160"/>
+        
+        <Label Content="Costo:" Margin="10,132,260,122"/>
+        <TextBox x:Name="CostoTextbox" TextWrapping="Wrap" Width="120" Margin="106,132,124,124"/>
+        
+        <Label Content="Valor Inv.:" Margin="10,167,260,91"/>
+        <TextBox x:Name="ValorTextbox" TextWrapping="Wrap" Width="120" Margin="106,167,124,89"/>
+        
+        <!--Botones -->
+        
+        <Button x:Name="NuevoButton" Content="Nuevo" Margin="10,230,250,24" Click="NuevoButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/nuevo.png"  Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarButton" Content="Guardar" Margin="126,230,137,24" Click="GuardarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/RegistroArticulo;component/Resources/descarga (1).png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarButon" Content="Eliminar" Margin="238,230,22,24" Click="EliminarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/eliminar.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+
+
+
+
+
+
+
+
+
+
+
     </Grid>
 </Window>

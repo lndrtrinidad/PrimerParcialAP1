@@ -129,7 +129,42 @@ namespace RegistroArticulo.BLL
 
         public static List<Articulos> GetList(Expression<Func<Articulos, bool>> criterio)
         {
+            List<Articulos> lista = new List<Articulos>();
+            Contexto contexto = new Contexto();
 
+            try
+            {
+                lista = contexto.Articulos.ToList();
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return lista;
+        }
+
+        public static List<Articulos> GetArticulos()
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                lista = contexto.Articulos.ToList();
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return lista;
         }
     }
 }
