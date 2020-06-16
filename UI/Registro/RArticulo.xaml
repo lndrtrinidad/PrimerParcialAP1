@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="RArticulos" Height="300" Width="350">
     <Grid>
-        <Label Content="Articuli Id:" Margin="10,35,260,223"/>
+        <Label Content="Articulo
+               Id:" Margin="10,35,260,223"/>
         <TextBox x:Name="ArticuloIdTexBox" Text="0" TextWrapping="Wrap" Width="120" Margin="106,35,124,223"/>
+        <!--Boton Buscar-->
         <Button Content="Buscar" Margin="238,35,10,223" Click="BuscarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/images.png" Stretch="Uniform" AlignmentX="Left"/>
@@ -27,19 +29,21 @@
         <Label Content="Valor Inv.:" Margin="10,167,260,91"/>
         <TextBox x:Name="ValorTextbox" TextWrapping="Wrap" Width="120" Margin="106,167,124,89"/>
         
-        <!--Botones -->
+        <!--Boton Nuevo-->
         
         <Button x:Name="NuevoButton" Content="Nuevo" Margin="10,230,250,24" Click="NuevoButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/nuevo.png"  Stretch="Uniform" AlignmentX="Left"/>
             </Button.Background>
         </Button>
+        <!--Boton Guardar-->
         <Button x:Name="GuardarButton" Content="Guardar" Margin="126,230,137,24" Click="GuardarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/RegistroArticulo;component/Resources/descarga (1).png" Stretch="Uniform" AlignmentX="Left"/>
             </Button.Background>
         </Button>
-        <Button x:Name="EliminarButon" Content="Eliminar" Margin="238,230,22,24" Click="EliminarButton_Click">
+        <!--Boton Eliminar-->
+            <Button x:Name="EliminarButon" Content="Eliminar" Margin="238,230,22,24" Click="EliminarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/eliminar.png" Stretch="Uniform" AlignmentX="Left"/>
             </Button.Background>

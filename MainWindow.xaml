@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Registro de Articulo" Height="330" Width="350">
     <Grid>
-        
+        <Label Content="Registrar" Margin="10,50,267,234"/>
+        <Menu x:Name="MenuRegistro" Margin="110,42,110,226"/>
+
     </Grid>
 </Window>
