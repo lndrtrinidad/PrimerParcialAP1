@@ -5,10 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroArticulo"
         mc:Ignorable="d"
-        Title="Registro de Articulo" Height="330" Width="350">
+        Title="Registro de Articulo" Height="400" Width="400">
     <Grid>
-        <Label Content="Registrar" Margin="10,50,267,234"/>
-        <Menu x:Name="MenuRegistro" Margin="110,42,110,226"/>
+        <Label Content="Registrar Articulo" Margin="84,50,79,248" FontSize="28" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.442"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.502"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="MenuButton" Click="MenuButton_Click" Margin="72,139,72,172">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Presione para registrar" Height="40" FontSize="18" Width="192" />
+            </StackPanel>
+
+        </Button>
+
 
     </Grid>
 </Window>

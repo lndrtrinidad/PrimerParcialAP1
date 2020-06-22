@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroArticulo.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RegistroArticulo.UI.Registro;
 
 namespace RegistroArticulo
 {
@@ -28,6 +30,12 @@ namespace RegistroArticulo
         private void Id_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void MenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegistroV RegistroV = new RegistroV();
+            RegistroV.Show();
         }
     }
 }

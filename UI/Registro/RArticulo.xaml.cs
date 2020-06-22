@@ -39,7 +39,7 @@ namespace RegistroArticulo.UI.Registro
         {
             bool esValido = true;
 
-            if (ArticuloIdTexBox.Text.Length == 0)
+            if (ArticuloIdTextBox.Text.Length == 0)
             {
                 esValido = false;
                 MessageBox.Show("Transaccion Fallida", "Fallo",
@@ -51,10 +51,10 @@ namespace RegistroArticulo.UI.Registro
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
-            var usuario = ArticuloBLL.Buscar(Utilidades.ToInt(ArticuloIdTexBox.Text));
+            var articulo = ArticuloBLL.Buscar(Utilidades.ToInt(ArticuloIdTextBox.Text));
 
-            if (Articulos != null)
-                this.Articulos = Articulos;
+            if (articulo != null)
+                this.Articulos = articulo;
             else
                 this.Articulos = new Articulos();
 
@@ -86,7 +86,7 @@ namespace RegistroArticulo.UI.Registro
 
         private void EliminarButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ArticuloBLL.Eliminar(Utilidades.ToInt(ArticuloIdTexBox.Text)))
+            if (ArticuloBLL.Eliminar(Utilidades.ToInt(ArticuloIdTextBox.Text)))
             {
                 Limpiar();
                 MessageBox.Show("Registro eliminado!", "Exito",
